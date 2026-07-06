@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Joel Khandagale — 2nd-Year IT Student, Algorithmic Problem Solver & Web Developer" />
+<title>Joel Khandagale — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-gradient" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<nav class="nav" data-testid="portfolio-nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="brand-dot"></span>Joel Khandagale</div>
+    <div class="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#process">Process</a>
+      <a href="#project">Project</a>
+      <a href="#open-to-work">Open to Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow reveal" data-testid="hero-status">
+      <span class="pulse"></span> Available for internships · 2026
+    </div>
+    <h1 class="reveal delay-1" data-testid="hero-name">
+      Joel<br/>
+      <span class="stroke">Khandagale.</span>
+    </h1>
+    <p class="hero-tag reveal delay-2" data-testid="hero-tagline">
+      <strong>2nd-Year IT Student</strong> · Algorithmic Problem Solver &amp; Web Developer. Building
+      client-side simulations, clean interfaces, and honest software.
+    </p>
+    <div class="cta-row reveal delay-3">
+      <a class="btn" href="#project" data-testid="hero-view-work-btn">
+        View selected work
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a class="btn" href="#open-to-work" data-testid="hero-open-to-work-btn">
+        Open to work
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- SKILLS -->
+<section id="skills" data-testid="skills-section">
+  <div class="container">
+    <div class="section-label reveal">01 — Toolkit</div>
+    <h2 class="section-title reveal delay-1">A small set of tools I use with intent.</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal delay-2" data-testid="skill-languages-card">
+        <div class="skill-cat">Languages</div>
+        <div class="skill-list">
+          <span class="badge">C</span>
+          <span class="badge">Python</span>
+          <span class="badge">HTML</span>
+          <span class="badge">JS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS (scroll-driven) -->
+<section id="process" class="process" data-testid="process-section">
+  <div class="process-scroll">
+    <div class="process-sticky">
+      <div class="container">
+        <div class="section-label reveal">02 — Process</div>
+        <h2 class="section-title reveal delay-1">How a web comes alive — dot by dot, line by line.</h2>
+        <div class="process-wrap reveal delay-2">
+          <canvas id="web-canvas" data-testid="web-canvas"></canvas>
+          <div class="process-overlay">
+            <div class="process-steps" data-testid="process-steps">
+              <span class="step-chip" data-step="0">01 · Ideate</span>
+              <span class="step-chip" data-step="1">02 · Sketch</span>
+              <span class="step-chip" data-step="2">03 · Code</span>
+              <span class="step-chip" data-step="3">04 · Ship</span>
+            </div>
+            <p class="process-caption" data-testid="process-caption">
+              <strong id="step-title">Ideate.</strong>
+              <span id="step-desc">Every page starts as loose dots — half-thoughts and stray sketches waiting to be connected.</span>
+            </p>
+          </div>
+          <div class="process-progress" id="process-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project" data-testid="project-section">
+  <div class="container">
+    <div class="section-label reveal">03 — Featured Project</div>
+    <div class="project reveal delay-1">
+      <span class="project-tag">Case study · 2026</span>
+      <h3 data-testid="project-title">Genetic Diversity Risk Estimator</h3>
+      <p class="project-subtitle">A Client-Side Wright–Fisher Simulation Tool</p>
+      <p class="project-desc">
+        An interactive web application that implements the Wright–Fisher mathematical model to simulate
+        genetic drift and estimate extinction risks in finite biological populations. It translates
+        complex stochastic biology into client-side probabilistic sampling algorithms.
+      </p>
+      <ul class="feature-list">
+        <li>
+          <span class="feature-num">/ 01</span>
+          <div class="feature-body">
+            <h4>Stochastic Algorithmic Modeling</h4>
+            <p>Built pure JavaScript engines using probabilistic math to calculate generational allele inheritance.</p>
+          </div>
+        </li>
+        <li>
+          <span class="feature-num">/ 02</span>
+          <div class="feature-body">
+            <h4>Real-Time Client-Side Computation</h4>
+            <p>Optimized performance to process thousands of generational data points instantly in-browser without backend overhead.</p>
+          </div>
+        </li>
+        <li>
+          <span class="feature-num">/ 03</span>
+          <div class="feature-body">
+            <h4>Edge-Case Resilience</h4>
+            <p>Engineered strict validation to handle extreme evolutionary states like population bottlenecks or total allele fixation safely.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="project-cta">
+        <a class="btn btn-primary" href="https://joelllllll07.github.io/Genetic-Diversity-Risk-Estimator/" target="_blank" rel="noopener" data-testid="project-live-demo-btn">
+          Launch Live Demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPEN TO WORK -->
+<section id="open-to-work" class="open-to-work" data-testid="open-to-work-section">
+  <div class="container">
+    <div class="section-label reveal">04 — Open to Work</div>
+    <h2 class="section-title reveal delay-1">Have a project in mind? Tell me about it.</h2>
+    <div class="work-grid">
+      <div class="work-copy reveal delay-2">
+        <div class="work-status">
+          <span class="pulse"></span> Currently open to internships &amp; freelance work
+        </div>
+        <p>
+          Share your name, a way to reach you, and a short idea of what you're building.
+          I read every message myself and usually reply within a couple of days.
+        </p>
+      </div>
+      <form class="work-form reveal delay-3" id="work-form" data-testid="open-to-work-form"
+            action="https://formspree.io/joelkhandagale366@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New project inquiry from portfolio site" />
+        <div class="field">
+          <label for="wf-name">Name</label>
+          <input type="text" id="wf-name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="wf-contact">Contact number</label>
+          <input type="tel" id="wf-contact" name="contact_number" placeholder="Phone number" required />
+        </div>
+        <div class="field">
+          <label for="wf-idea">Project idea</label>
+          <textarea id="wf-idea" name="project_idea" placeholder="What are you building? What would you like help with?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="form-submit-btn">
+          Send message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </button>
+        <p class="form-note" id="form-note"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact" data-testid="contact-section">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="section-label reveal">05 — Get in touch</div>
+      <h2 class="reveal delay-1">
+        Let's build<br/>
+        something <a href="mailto:joelkhandagale366@gmail.com" data-testid="contact-email-inline">worth shipping.</a>
+      </h2>
+      <div class="contact-links reveal delay-2">
+        <a class="contact-link" href="resume.pdf" download="Joel_Khandagale_Resume.pdf" data-testid="hero-download-resume-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14"/><path d="m6 11 6 6 6-6"/><path d="M5 21h14"/></svg>
+          Download Resume
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/joel-khandagale-20136740b/" target="_blank" rel="noopener" data-testid="contact-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zm-1.5-10.28a1.72 1.72 0 111.72-1.72 1.72 1.72 0 01-1.72 1.72zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.4.86 3.4 3.6z"/></svg>
+          LinkedIn
+        </a>
+        <a class="contact-link" href="https://github.com/joelllllll07" target="_blank" rel="noopener" data-testid="contact-github">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12 11.5 11.5 0 0012 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="contact-link" href="mailto:joelkhandagale366@gmail.com" data-testid="contact-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          joelkhandagale366@gmail.com
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div>© 2026 Joel Khandagale</div>
+      <div>Handcrafted with HTML, CSS &amp; care.</div>
+    </footer>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
